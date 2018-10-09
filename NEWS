@@ -3,6 +3,7 @@ leaflet 2.0.3
 
 BUG FIXES and IMPROVEMENTS
 * Fixed [rstudio/crosstalk#58](https://github.com/rstudio/crosstalk/issues/58), which caused Leaflet maps that used Crosstalk shared data in Shiny apps, to be redrawn at incorrect times.
+* Fixes [rstudio/leaflet#577](https://github.com/rstudio/leaflet/issues/577) and the issue in [rstudio/leaflet#574](https://github.com/rstudio/leaflet/issues/574) by warning users if the number of `layerId`'s are less than the number of map elements.
 
 
 

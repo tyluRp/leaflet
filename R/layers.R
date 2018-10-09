@@ -1222,6 +1222,9 @@ addPolygons <- function(
 ) {
   if (missing(labelOptions)) labelOptions <- labelOptions()
 
+  if (!is.null(layerId) & length(map) > length(unique(layerId)))
+    warning("More map elements than layerId's. Did you mean to use 'group'?", call. = FALSE)
+
   options <- c(options, filterNULL(list(
     stroke = stroke, color = color, weight = weight, opacity = opacity,
     fill = fill, fillColor = fillColor, fillOpacity = fillOpacity,
